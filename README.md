@@ -1,5 +1,5 @@
 # ramda-normalize-url
-Fun experiment  to normalize urls w/ ramda
+Fun experiment  to normalize URLs w/ ramda
 
 ## Usage
 
