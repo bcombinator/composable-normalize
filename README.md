@@ -30,3 +30,6 @@ normalize('http://www.github.com/%7Eusername/');
 - [x] Lowercase scheme
 - [x] Remove default http|https ports
 - [x] Adds trailing slash
+
+## Todos
+- [ ] Add Tests
