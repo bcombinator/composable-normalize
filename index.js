@@ -1,3 +1,5 @@
+'use strict';
+
 const {compose, toLower, replace, append, decode} = require('./prelude');
 
 const dedupeSlashes = /([^:]\/)\/+/g;
