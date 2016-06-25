@@ -1,4 +1,4 @@
-# functional-normalize-url
+# composable-normalize
 Fun experiment  to normalize URLs w/ functional programming
 
 ## Usage
