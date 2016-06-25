@@ -28,7 +28,7 @@ normalize('http://www.github.com/%7Eusername/');
 - [x] Dedupe dots
 - [x] Decode
 - [x] Lowercase scheme
-- [x] Remove default http|https ports
+- [x] Remove default http/https ports
 - [x] Adds trailing slash
 
 ## Todos
