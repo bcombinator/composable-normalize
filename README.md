@@ -1,5 +1,5 @@
 # composable-normalize
-Fun experiment  to normalize URLs w/ functional programming
+Experiment  to normalize URLs w/ functional programming
 
 ## Usage
 
