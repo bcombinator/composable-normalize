@@ -1,8 +1,13 @@
 const {compose, toLower, replace, append, decode} = require('./prelude');
 
-exports.normalize = compose([replace(/([^:]\/)\/+/g, '$1'),
-    replace(/\/\.+/g, '/'),
-    replace(/(\:80|\:443)/, ''),
+const dedupeSlashes = /([^:]\/)\/+/g;
+const dedupeDots = /\/\.+/g;
+const defaultPorts = /(\:80|\:443)/;
+
+exports.normalize = compose([
+    replace(dedupeSlashes, '$1'),
+    replace(dedupeDots, '/'),
+    replace(defaultPorts, ''),
     toLower,
     append('/'),
     decode
