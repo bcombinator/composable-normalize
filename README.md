@@ -6,9 +6,6 @@ Experiment  to normalize URLs w/ functional programming
 ```js
 const normalize = require('composable-normalize');
 
-normalize('http://hello.com//there/../buddy/..');
-//=> 'http://hello.com/there/buddy/'
-
 normalize('HTTP://www.Github.com/');
 //=> 'http://www.github.com/'
 
