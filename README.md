@@ -1,3 +1,4 @@
+![](https://img.shields.io/badge/purely%20functional-%CE%BB-blue.svg?style=flat-square)
 # composable-normalize
 Experiment  to normalize URLs w/ functional programming
 
