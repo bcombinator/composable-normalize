@@ -5,7 +5,7 @@ Experiment  to normalize URLs w/ functional programming
 ## Usage
 
 ```js
-const normalize = require('composable-normalize');
+import normalize from 'composable-normalize';
 
 normalize('HTTP://www.Github.com/');
 //=> 'http://www.github.com/'
