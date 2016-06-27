@@ -1,4 +1,5 @@
 ![](https://img.shields.io/badge/purely%20functional-%CE%BB-blue.svg?style=flat-square)
+[![API stability](https://img.shields.io/badge/stability-experimental-orange.svg?style=flat-square)](https://nodejs.org/api/documentation.html#documentation_stability_index)
 # composable-normalize
 Experiment  to normalize URLs w/ functional programming
 
