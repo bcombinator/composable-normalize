@@ -1,5 +1,8 @@
+![](https://nodei.co/npm/composable-normalize.png)
+
 ![](https://img.shields.io/badge/purely%20functional-%CE%BB-blue.svg?style=flat-square)
 [![API stability](https://img.shields.io/badge/stability-experimental-orange.svg?style=flat-square)](https://nodejs.org/api/documentation.html#documentation_stability_index)
+[![npm version](https://img.shields.io/npm/v/composable-normalize.svg?style=flat-square)](https://www.npmjs.com/package/composable-normalize)
 # composable-normalize
 Experiment  to normalize URLs w/ functional programming
 
