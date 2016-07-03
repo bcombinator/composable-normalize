@@ -32,4 +32,4 @@ normalize('http://www.github.com/%7Eusername/');
 
 ## Todos
 - [ ] Add Tests
-- [ ] Publish to npm
+- [x] Publish to npm
