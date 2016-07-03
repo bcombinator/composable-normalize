@@ -6,6 +6,11 @@
 # composable-normalize
 Experiment  to normalize URLs w/ functional programming
 
+## Install
+```sh
+npm i --save-dev composable-normalize
+```
+
 ## Usage
 
 ```js
