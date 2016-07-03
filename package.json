@@ -1,0 +1,25 @@
+{
+  "name": "composable-normalize",
+  "description": "Normalize URLs w/ functional programming ",
+  "version": "1.0.0",
+  "author": "David Chase <davidchase03@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/davidchase/composable-normalize/issues"
+  },
+  "homepage": "https://github.com/davidchase/composable-normalize#readme",
+  "keywords": [
+    "canonical",
+    "normalize",
+    "uri",
+    "url"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidchase/composable-normalize.git"
+  },
+  "scripts": {
+    "test": "n/a"
+  }
+}
