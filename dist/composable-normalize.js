@@ -1,8 +1,8 @@
 (function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-	typeof define === 'function' && define.amd ? define(factory) :
-	(global.composableNormalize = factory());
-}(this, (function () { 'use strict';
+	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
+	typeof define === 'function' && define.amd ? define(['exports'], factory) :
+	(factory((global.composableNormalize = global.composableNormalize || {})));
+}(this, (function (exports) { 'use strict';
 
 // decode :: String -> String
 var decode = decodeURIComponent
@@ -16,7 +16,12 @@ var _compose = function (f, g) { return function () {
 ; }	}
 
 // compose :: (a -> c) -> [(a -> a)] -> (a -> c)
-var compose = function (fns) { return fns.reduce(_compose); }
+var compose = function () {
+	var fns = [], len = arguments.length;
+	while ( len-- ) fns[ len ] = arguments[ len ];
+
+	return fns.reduce(_compose);
+}
 
 // replace :: Regex -> String -> String -> String
 var replace = function (pattern, substr) { return function (str) { return str.replace(pattern, substr); }; }
@@ -31,15 +36,18 @@ var dedupeSlashes = /([^:]\/)\/+/g
 var dedupeDots = /\/\.+/g
 var defaultPorts = /(:80|:443)/
 
-var index = compose([
+var normalize = compose(
   replace(dedupeSlashes, '$1'),
   replace(dedupeDots, '/'),
   replace(defaultPorts, ''),
   toLower,
   append('/'),
   decode
-])
+)
 
-return index;
+exports.normalize = normalize;
+exports.compose = compose;
+
+Object.defineProperty(exports, '__esModule', { value: true });
 
 })));

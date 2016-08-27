@@ -7,7 +7,7 @@ const decode = decodeURIComponent
 const _compose = (f, g) => (...args) => f(g(...args))
 
 // compose :: (a -> c) -> [(a -> a)] -> (a -> c)
-const compose = fns => fns.reduce(_compose)
+const compose = (...fns) => fns.reduce(_compose)
 
 // replace :: Regex -> String -> String -> String
 const replace = (pattern, substr) => str => str.replace(pattern, substr)

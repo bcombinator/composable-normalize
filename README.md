@@ -15,19 +15,28 @@ npm i --save-dev composable-normalize
 ## Usage
 
 ```js
-import normalize from 'composable-normalize'
+import {normalize} from 'composable-normalize'
 
 normalize('HTTP://www.Github.com/')
 //=> 'http://www.github.com/'
 
 normalize('http://www.github.com/../a/b/../c/./d')
-// => 'http://www.github.com/a/c/d'
+// => 'http://www.github.com/a/b/c/d/'
 
 normalize('http://www.github.com:80/bar')
-// => 'http://www.github.com/bar'
+// => 'http://www.github.com/bar/'
 
 normalize('http://www.github.com/%7Eusername/')
-// => 'http://www.github.com/~username'
+// => 'http://www.github.com/~username/'
+```
+
+also as a bonus you can do functional composition right to left
+
+```js
+import {normalize, compose} from 'composable-normalize'
+
+compose(str => `${str}bar`, normalize)('HTTP://github.com////foo/')
+// =>'http://github.com/foo/bar'
 ```
 
 ## Current Features
@@ -40,5 +49,6 @@ normalize('http://www.github.com/%7Eusername/')
 - [x] Adds trailing slash
 
 ## Todos
-- [ ] Add Tests
+- [x] Add Tests
 - [x] Publish to npm
+- [ ] Add Options?
