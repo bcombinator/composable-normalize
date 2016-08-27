@@ -30,7 +30,7 @@ normalize('http://www.github.com/%7Eusername/')
 // => 'http://www.github.com/~username/'
 ```
 
-also as a bonus you can do functional composition right to left
+also as a bonus you can do functional composition right to left :fire:
 
 ```js
 import {normalize, compose} from 'composable-normalize'
