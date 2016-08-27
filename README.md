@@ -36,7 +36,7 @@ also as a bonus you can do functional composition right to left
 import {normalize, compose} from 'composable-normalize'
 
 compose(str => `${str}bar`, normalize)('HTTP://github.com////foo/')
-// =>'http://github.com/foo/bar'
+// => 'http://github.com/foo/bar'
 ```
 
 ## Current Features
