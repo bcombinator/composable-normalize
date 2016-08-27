@@ -20,7 +20,7 @@
     "url": "git+https://github.com/davidchase/composable-normalize.git"
   },
   "scripts": {
-    "build": "rollup -c -f umd -o dist/composable-normalize.js && uglifyjs dist/composable-normalize.js -o dist/composable-normalize.min.js"
+    "build": "rollup -c && uglifyjs dist/composable-normalize.js -o dist/composable-normalize.min.js"
   },
   "devDependencies": {
     "rollup": "0.34.10",
