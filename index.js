@@ -1,6 +1,6 @@
 'use strict'
 
-import { compose, toLower, replace, append, decode } from './prelude'
+import { compose, toLower, replace, append, decode } from '@bcombinator/prelude'
 
 const dedupeSlashes = /([^:]\/)\/+/g
 const dedupeDots = /\/\.+/g

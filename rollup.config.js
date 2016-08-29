@@ -7,5 +7,8 @@ module.exports = {
   format: 'umd',
   plugins: [
     buble()
-  ]
+  ],
+  globals: {
+    '@bcombinator/prelude': 'bcombinatorPrelude'
+  }
 }
