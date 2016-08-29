@@ -14,7 +14,7 @@
     "url"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/composable-normalize.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/davidchase/composable-normalize.git"
