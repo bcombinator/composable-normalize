@@ -1,6 +1,6 @@
 ![](https://nodei.co/npm/composable-normalize.png)
 
-![](https://img.shields.io/badge/purely%20functional-%CE%BB-blue.svg?style=flat-square)
+![](https://img.shields.io/badge/functional-%CE%BB-blue.svg?style=flat-square)
 [![API stability](https://img.shields.io/badge/stability-experimental-orange.svg?style=flat-square)](https://nodejs.org/api/documentation.html#documentation_stability_index)
 [![npm version](https://img.shields.io/npm/v/composable-normalize.svg?style=flat-square)](https://www.npmjs.com/package/composable-normalize)
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com/)
